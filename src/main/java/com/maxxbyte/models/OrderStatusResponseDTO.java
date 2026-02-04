@@ -1,4 +1,4 @@
-package models;
+package com.maxxbyte.models;
 
 public class OrderStatusResponseDTO {
 

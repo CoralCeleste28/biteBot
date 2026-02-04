@@ -1,4 +1,4 @@
-package models;
+package com.maxxbyte.models;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

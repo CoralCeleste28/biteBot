@@ -1,8 +1,5 @@
-package controllers;
+package com.maxxbyte.controllers;
 
-import com.example.robotdelivery.model.CartItem;
-import com.example.robotdelivery.model.DeliveryAddress;
-import com.example.robotdelivery.model.PaymentProfile;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -26,7 +23,7 @@ public class OrderConfirmationController {
         @GetMapping("/confirmation")
         public String confirmationPage(HttpSession session, Model model) {
 
-            menuItmInCart menuItemInCart = (menuItemInCart) session.getAttribute(SESSION_ITEM_KEY);
+            menuItemInCart menuItemInCart = (menuItemInCart) session.getAttribute(SESSION_ITEM_KEY);
             PaymentProfile profile = (PaymentProfile) session.getAttribute(SESSION_PROFILE_KEY);
 
             // Delivery address (auto-filled / placeholder for now)
@@ -70,4 +67,5 @@ public class OrderConfirmationController {
             // For now redirect to status placeholder
             return "redirect:/order-status";
         }
+    }
 }

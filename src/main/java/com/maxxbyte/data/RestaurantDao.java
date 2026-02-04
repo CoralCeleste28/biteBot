@@ -1,5 +1,5 @@
-package data;
-import models.Restaurant;
+package com.maxxbyte.data;
+import com.maxxbyte.models.Restaurant;
 import java.util.List;
 
 public interface RestaurantDao {

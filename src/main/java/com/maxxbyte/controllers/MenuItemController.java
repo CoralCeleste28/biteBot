@@ -1,4 +1,4 @@
-package controllers;
+package com.maxxbyte.controllers;
 
 public class MenuItemController {
 }

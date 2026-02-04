@@ -1,4 +1,4 @@
-package models;
+package com.maxxbyte.models;
 
 import java.util.HashSet;
 import java.util.Objects;

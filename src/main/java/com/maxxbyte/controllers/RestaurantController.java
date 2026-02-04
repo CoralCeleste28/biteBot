@@ -1,9 +1,8 @@
-package controllers;
+package com.maxxbyte.controllers;
 
-import data.MenuItemDao;
-import data.RestaurantDao;
-import models.MenuItem;
-import models.Restaurant;
+import com.maxxbyte.data.MenuItemDao;
+import com.maxxbyte.data.RestaurantDao;
+import com.maxxbyte.models.MenuItem;
 
 import java.util.List;
 import com.example.robotdelivery.model.MenuItem;
@@ -13,9 +12,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 public class RestaurantController {

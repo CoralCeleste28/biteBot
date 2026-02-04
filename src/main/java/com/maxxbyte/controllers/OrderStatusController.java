@@ -1,4 +1,4 @@
-package controllers;
+package com.maxxbyte.controllers;
 
 import com.example.robotdelivery.model.OrderStatus;
 import com.example.robotdelivery.model.OrderStatusResponse;

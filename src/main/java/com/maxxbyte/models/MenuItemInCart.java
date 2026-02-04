@@ -1,7 +1,7 @@
-package models;
+package com.maxxbyte.models;
 
-import java.awt.*;
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 public class MenuItemInCart {
     private MenuItem menuItemName = null;
@@ -31,12 +31,13 @@ public class MenuItemInCart {
         this.quantity = quantity;
     }
 
-    public Double getMenuItemTotal(){
-        double basePrice = menuItemName.getMenuItemPrice();
-        int quantity = new int(this.quantity);
+    public BigDecimal getMenuItemTotal(){
+        BigDecimal basePrice = BigDecimal.valueOf(menuItemName.getMenuItemPrice());
+        BigDecimal quantity = BigDecimal.valueOf(this.quantity);
 
-        double subTotal = basePrice * (quantity);
-        double taxes = subTotal * (.08);
-        return subTotal * (taxes);
+        BigDecimal subTotal = basePrice.multiply(quantity);
+        BigDecimal taxes = subTotal.multiply(BigDecimal.valueOf(0.0825));
+
+        return subTotal.add(taxes).setScale(2, RoundingMode.HALF_UP);
     }
 }

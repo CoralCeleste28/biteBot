@@ -1,9 +1,8 @@
-package data;
+package com.maxxbyte.data;
 
-import models.MenuItem;
-import models.Restaurant;
+import com.maxxbyte.models.MenuItem;
+import com.maxxbyte.models.Restaurant;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 public interface MenuItemDao {

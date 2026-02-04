@@ -1,4 +1,4 @@
-package data;
+package com.maxxbyte.data;
 
 public interface ProfileDao {
     public interface ProfileDao

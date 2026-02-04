@@ -1,4 +1,4 @@
-package controllers;
+package com.maxxbyte.controllers;
 
 public class CheckoutController {
     @PostMapping("/checkout/submit")

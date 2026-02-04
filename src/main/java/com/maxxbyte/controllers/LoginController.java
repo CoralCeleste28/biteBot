@@ -1,4 +1,4 @@
-package controllers;
+package com.maxxbyte.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -30,4 +30,5 @@ public class LoginController {
             model.addAttribute("error", "Invalid email or password");
             return "login";
         }
+    }
 }

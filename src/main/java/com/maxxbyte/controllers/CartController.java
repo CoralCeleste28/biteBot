@@ -1,7 +1,7 @@
-package controllers;
+package com.maxxbyte.controllers;
 
 import com.example.robotdelivery.model.CartItem;
-import models.MenuItemInCart;
+import com.maxxbyte.models.MenuItemInCart;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
