@@ -37,7 +37,6 @@ public class MenuItemInCart {
 
         double subTotal = basePrice * (quantity);
         double taxes = subTotal * (.08);
-
         return subTotal * (taxes);
     }
 }
