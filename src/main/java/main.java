@@ -1,8 +1,11 @@
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class main {
 
-    @SpringBootApplication
     public static void main(String[] args) {
-        SpringApplication app = new SpringApplication(RobotProject.class);
+        SpringApplication app = new SpringApplication(RobotProjec.class);
         app.run(args);
     }
 }
